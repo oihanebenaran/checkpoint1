@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf0cab758c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+
+        /*Grid 1*/
+        .gridOne {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        /*Grid 2*/
+        .gridTwo {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+
+        .gridTwo > .first-column {
+            background-color: red;
+        }
+
+        .gridTwo > .second-column {
+            background-color: blue;
+        }
+
+        .gridTwo > .third-column {
+            background-color: yellow;
+        }
+
+        /*Grid 3*/
+        .gridThree {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            background-color: lightgray;
+            width: 500px;
+            height: 300px;
+
+        }
+
+        .gridThree img {
+            height: 225px;
+            width: 500px;
+            object-fit: cover;
+        }
+
+        /*Grid 4*/
+        .gridFour {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 500px;
+            background-color: green;
+        }
+
+        .gridFour > #second-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        /*Grid 5*/
+        .gridFive {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 500px;
+            background-color: lightgrey;
+        }
+
+        .gridFive > #second-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .gridFive > #second-row img {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        /*Grid 6*/
+        .gridSix {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            width: 500px;
+            background-color: lightgray;
+        }
+
+        .gridSix p {
+            font-family: "Pacifico", cursive;
+        }
+
+    </style>
+
+    <title>Checkpoint 1</title>
+</head>
+
+<body>
+
+    <!--Grid 1-->
+    <div class="gridOne">
+        <p>Hello World</p>
+        <p style="color: blue;">My Fantastic Content</p>
+    </div>
+
+    <!--Grid 2-->
+    <div class="gridTwo">
+        <div class="first-column">
+            <p>Smooth</p>
+        </div>
+        <div class="second-column">
+            <p>Like</p>
+        </div>
+        <div class="third-column">
+            <p>Butter</p>
+        </div>
+    </div>
+
+    <!--Grid 3 -->
+    <div class="gridThree">
+        <div class="text">
+            <p>
+                Smooth like butter
+            </p>
+        </div>
+        <div class="picture">
+            <img src="images/grid3.webp" alt="">
+        </div>
+    </div>
+
+    <!--Grid 4-->
+    <div class="gridFour">
+        <div class="first-row">
+            <p>Hotter</p>
+        </div>
+        <div id="second-row">
+            <p>Sweeter</p>
+            <p>Cooler</p>
+        </div>
+    </div>
+
+    <!--Grid 5-->
+    
+    <div class="gridFive">
+        <div class="first-row">
+            <p>Bangtan Sonyeondan</p>
+        </div>
+        <div id="second-row">
+            <img src="images/grid5-image2.jpg" alt="">
+            <img src="images/grid5-image1.jpg" alt="">
+        </div>
+    </div>
+
+    <!--Grid 6-->
+    <div class="gridSix">
+        <i class="fa-solid fa-fire"></i>
+        <p>Bultaoreune</p>
+    </div>
+</body>
+</html>
